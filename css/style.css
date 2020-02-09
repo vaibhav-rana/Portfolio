@@ -1,0 +1,955 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #212529;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+
+::selection {
+    color: #ffde59;
+    background-color: rgba(33, 37, 41, 0.4);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+}
+
+a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #ffde59;
+    transition: .2s;
+}
+
+header {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.9)), url(../image/bg.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    height: 660px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    clip-path: polygon(100% 0%, 100% 80%, 50% 100%, 0% 80%, 0 0);
+}
+
+.lg:hover {
+    border-bottom: 2px solid transparent;
+}
+
+.logo {
+    width: 100px;
+}
+
+.navigation {
+    padding: 10px;
+}
+
+.navigation li {
+    margin: 0px 20px;
+}
+
+.navbg {
+    padding: 0;
+    background-color: rgba(33, 37, 41, .20);
+}
+
+.header-text {
+    padding-top: 220px;
+    text-shadow: 2px 5px 5px #000;
+}
+
+.header-text h1 {
+    margin: 10px 0;
+    font-size: 55px;
+    font-weight: 600;
+    word-spacing: 5px;
+    letter-spacing: 10px;
+}
+
+.header-text h2 {
+    margin: 10px 0;
+    font-size: 40px;
+    font-weight: 600;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+
+.header-text p {
+    margin: 5px 0;
+    font-size: 15px;
+    color: #fff;
+}
+
+.header-text i {
+    position: relative;
+/*    padding-top: 150px;*/
+    font-size: 25px;
+    color: #ffde59;
+    animation: bouncearrow 1.5s infinite;
+}
+
+@keyframes bouncearrow {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 20px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+section {
+    padding: 60px 0;
+}
+
+.about-text {
+    padding-top: 50px;
+}
+
+.about-text h2 {
+    font-size: 30px;
+}
+
+.about-text h2:after {
+    display: block;
+    height: 4px;
+    background-color: #ffde59;
+    content: "";
+    width: 30%;
+    margin-top: 10px;
+}
+
+.about-text h1 {
+    margin-top: 10px;
+    font-size: 35px;
+    font-weight: 600;
+}
+s{
+    sdfsdafsf
+}
+.about-text p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #6d6d6d;
+}
+
+.about-text a {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #ffde59;
+    color: #212529;
+}
+
+.about-text a:hover {
+    background-color: #212529;
+    color: #ffde59;
+    border-bottom: 2px solid transparent;
+}
+
+.about-img {
+    width: 100%;
+}
+
+.skills h2 {
+    font-size: 30px;
+}
+
+.skills h2:after {
+    display: block;
+    height: 4px;
+    background-color: #ffde59;
+    content: "";
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.card {
+    margin: 10px;
+    padding: 10px;
+}
+
+.card-details {
+    margin-top: 50px;
+}
+
+.card-details h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hire {
+    background-color: #ededed;
+    padding: 0px;
+}
+
+.hire-text {
+    padding: 15px 0;
+}
+
+.hire h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.hire p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.hireme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hireme a {
+    padding: 5px 25px;
+    background-color: #ffde59;
+    color: #212529;
+    border: 2px solid transparent;
+}
+
+.hireme a:hover {
+    background-color: #212529;
+    color: #ffde59;
+    border: 2px solid transparent;
+}
+
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.contact h2:after {
+    display: block;
+    height: 4px;
+    background-color: #ffde59;
+    content: "";
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.contactme i {
+    margin: 15px;
+    font-size: 30px;
+}
+
+.contactme p {
+    margin: 0;
+    font-size: 18px;
+}
+
+footer {
+    margin: 0;
+    padding: 5px;
+    background-color: #212529;
+}
+
+.social ul {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.social ul li {
+    margin: 0px 20px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.social a {
+    border: none;
+
+}
+
+.social i {
+    font-size: 20px;
+    color: #ffde59;
+}
+
+.social p {
+    margin: 0;
+    padding: 0;
+    color: #ffde59;
+    font-size: 18px;
+}
+
+.icon{
+    margin-right: 25px;
+}
+@media(min-width:993px) {}
+
+@media(min-width:769px) and (max-width:992px) {
+    section {
+        padding: 30px 0;
+    }
+
+    .header-text {
+        padding-top: 240px;
+        text-shadow: 2px 5px 5px #000;
+    }
+
+    .header-text h1 {
+        margin: 10px 0;
+        font-size: 55px;
+        font-weight: 600;
+        word-spacing: 5px;
+        letter-spacing: 10px;
+    }
+
+    .header-text h2 {
+        margin: 10px 0;
+        font-size: 40px;
+        font-weight: 600;
+        word-spacing: 5px;
+        letter-spacing: 5px;
+    }
+
+    .about-text h2 {
+        font-size: 30px;
+    }
+
+    .about-text h2:after {
+        display: block;
+        height: 4px;
+        background-color: #ffde59;
+        content: "";
+        width: 60%;
+        margin-top: 10px;
+    }
+
+    .about-text h1 {
+        margin-top: 10px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .about-text p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: #6d6d6d;
+    }
+
+    .about-text a {
+        margin-top: 10px;
+        padding: 5px 10px;
+        background-color: #ffde59;
+        color: #212529;
+    }
+
+    .about-text a:hover {
+        background-color: #212529;
+        color: #ffde59;
+        border-bottom: 2px solid transparent;
+    }
+
+    .skills h2 {
+        font-size: 30px;
+    }
+
+    .skills h2:after {
+        display: block;
+        height: 4px;
+        background-color: #ffde59;
+        content: "";
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .card {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .card-details {
+        margin-top: 20px;
+    }
+
+    .card-details h3 {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .hire-text {
+        padding: 5px 15px;
+    }
+
+    .hire h2 {
+        font-size: 30px;
+        margin-top: 5px;
+        font-weight: 600;
+    }
+
+    .hire p {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .hireme a {
+        padding: 5px 10px;
+        background-color: #ffde59;
+        color: #212529;
+        border: 2px solid transparent;
+    }
+
+    .contact h2 {
+        font-size: 30px;
+        margin-bottom: 4px;
+    }
+
+    .contact h2:after {
+        display: block;
+        height: 4px;
+        background-color: #ffde59;
+        content: "";
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contactme i {
+        margin: 8px;
+        font-size: 25px;
+    }
+
+    .contactme p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .social i {
+        font-size: 15px;
+        color: #ffde59;
+    }
+
+    .social p {
+        margin: 0;
+        padding: 0;
+        color: #ffde59;
+        font-size: 14px;
+    }
+
+    .social ul li {
+        margin: 0px 20px;
+    }
+}
+
+@media(min-width:577px) and (max-width:768px) {
+    a:hover {
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition: .2s;
+        border-width: 3px
+    }
+
+    section {
+        padding: 20px 0;
+    }
+
+    .header-text {
+        padding-top: 280px;
+        text-shadow: 2px 5px 5px #000;
+    }
+
+    .header-text h1 {
+        margin: 10px 0;
+        font-size: 50px;
+        font-weight: 600;
+        word-spacing: 5px;
+        letter-spacing: 10px;
+    }
+
+    .header-text h2 {
+        margin: 10px 0;
+        font-size: 35px;
+        font-weight: 600;
+        word-spacing: 5px;
+        letter-spacing: 5px;
+    }
+
+    .about-text h2 {
+        font-size: 30px;
+    }
+
+    .about-text h2:after {
+        display: block;
+        height: 4px;
+        background-color: #ffde59;
+        content: "";
+        width: 60%;
+        margin-top: 10px;
+    }
+
+    .about-text h1 {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .about-text p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        text-transform: capitalize;
+        color: #6d6d6d;
+    }
+
+    .about-text a {
+        margin-top: 10px;
+        padding: 5px 10px;
+        background-color: #ffde59;
+        color: #212529;
+    }
+
+    .about-text a:hover {
+        background-color: #212529;
+        color: #ffde59;
+        border-bottom: 2px solid transparent;
+    }
+
+    .skills h2 {
+        font-size: 32px;
+    }
+
+    .skills h2:after {
+        display: block;
+        height: 4px;
+        background-color: #ffde59;
+        content: "";
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .card {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .card-details {
+        margin-top: 20px;
+    }
+
+    .card-details h3 {
+        font-size: 22px;
+        font-weight: 900;
+    }
+
+    .hire-text {
+        padding: 5px 15px;
+    }
+
+    .hire h2 {
+        font-size: 22px;
+        margin-top: 5px;
+        font-weight: 600;
+    }
+
+    .hire p {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .hireme a {
+        padding: 5px 10px;
+        background-color: #ffde59;
+        color: #212529;
+        border: 2px solid transparent;
+    }
+
+    .contact h2 {
+        font-size: 32px;
+        margin-bottom: 4px;
+    }
+
+    .contact h2:after {
+        display: block;
+        height: 4px;
+        background-color: #ffde59;
+        content: "";
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contactme i {
+        margin: 8px;
+        font-size: 20px;
+    }
+
+    .contactme p {
+        margin: 0;
+        font-size: 10px;
+    }
+
+    .social i {
+        font-size: 15px;
+        color: #ffde59;
+    }
+
+    .social p {
+        margin: 0;
+        padding: 0;
+        color: #ffde59;
+        font-size: 14px;
+    }
+
+    .social ul li {
+        margin: 0px 20px;
+    }
+}
+
+@media(min-width:480px) and (max-width:576px) {
+    a:hover {
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition: .2s;
+        border-width: 3px
+    }
+
+    section {
+        padding: 20px 0;
+    }
+
+    .header-text {
+        padding-top: 280px;
+        text-shadow: 2px 5px 5px #000;
+    }
+
+    .header-text h1 {
+        margin: 10px 0;
+        font-size: 35px;
+        font-weight: 600;
+        word-spacing: 5px;
+        letter-spacing: 10px;
+    }
+
+    .header-text h2 {
+        margin: 10px 0;
+        font-size: 30px;
+        font-weight: 600;
+        word-spacing: 5px;
+        letter-spacing: 5px;
+    }
+
+    .about-text h2 {
+        font-size: 22px;
+    }
+
+    .about-text h2:after {
+        display: block;
+        height: 4px;
+        background-color: #ffde59;
+        content: "";
+        width: 60%;
+        margin-top: 10px;
+    }
+
+    .about-text h1 {
+        margin-top: 10px;
+        font-size: 23px;
+        font-weight: 800;
+    }
+
+    .about-text p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        text-transform: capitalize;
+        color: #6d6d6d;
+    }
+
+    .about-text a {
+        margin-top: 10px;
+        padding: 5px 10px;
+        background-color: #ffde59;
+        color: #212529;
+    }
+
+    .about-text a:hover {
+        background-color: #212529;
+        color: #ffde59;
+        border-bottom: 2px solid transparent;
+    }
+
+    .skills h2 {
+        font-size: 22px;
+    }
+
+    .skills h2:after {
+        display: block;
+        height: 4px;
+        background-color: #ffde59;
+        content: "";
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .card {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .card-details {
+        margin-top: 20px;
+    }
+
+    .card-details h3 {
+        font-size: 18px;
+        font-weight: 900;
+    }
+
+    .hire-text {
+        padding: 5px 15px;
+    }
+
+    .hire h2 {
+        font-size: 20px;
+        margin-top: 5px;
+        font-weight: 600;
+    }
+
+    .hire p {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .hireme a {
+        padding: 5px 10px;
+        background-color: #ffde59;
+        color: #212529;
+        border: 2px solid transparent;
+    }
+
+    .contact h2 {
+        font-size: 22px;
+        margin-bottom: 4px;
+    }
+
+    .contact h2:after {
+        display: block;
+        height: 4px;
+        background-color: #ffde59;
+        content: "";
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contactme i {
+        margin: 8px;
+        font-size: 18px;
+    }
+
+    .contactme p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .social i {
+        font-size: 15px;
+        color: #ffde59;
+    }
+
+    .social p {
+        margin: 0;
+        padding: 0;
+        color: #ffde59;
+        font-size: 14px;
+    }
+
+    .social ul li {
+        margin: 0px 20px;
+    }
+}
+
+@media(max-width:479px) {
+    a:hover {
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition: .2s;
+        border-width: 3px
+    }
+
+    section {
+        padding: 25px 0;
+    }
+
+    .header-text {
+        padding-top: 280px;
+        text-shadow: 2px 5px 5px #000;
+    }
+
+    .header-text h1 {
+        margin: 10px 0;
+        font-size: 26px;
+        font-weight: 600;
+        word-spacing: 5px;
+        letter-spacing: 5px;
+    }
+
+    .header-text h2 {
+        margin: 10px 0;
+        font-size: 20px;
+        font-weight: 600;
+        word-spacing: 5px;
+        letter-spacing: 5px;
+    }
+
+    .about-text h2 {
+        font-size: 22px;
+    }
+
+    .about-text h2:after {
+        display: block;
+        height: 4px;
+        background-color: #ffde59;
+        content: "";
+        width: 60%;
+        margin-top: 10px;
+    }
+
+    .about-text h1 {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .about-text p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 10px;
+        text-transform: capitalize;
+        color: #6d6d6d;
+    }
+
+    .about-text a {
+        margin-top: 10px;
+        padding: 3px 5px;
+        background-color: #ffde59;
+        color: #212529;
+    }
+
+    .about-text a:hover {
+        background-color: #212529;
+        color: #ffde59;
+        border-bottom: 2px solid transparent;
+    }
+
+    .skills h2 {
+        font-size: 22px;
+    }
+
+    .skills h2:after {
+        display: block;
+        height: 4px;
+        background-color: #ffde59;
+        content: "";
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .card {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .card-details {
+        margin-top: 20px;
+    }
+
+    .card-details h3 {
+        margin: 0;
+        font-size: 12px;
+        font-weight: 900;
+    }
+
+    .hire-text {
+        padding: 10px 15px;
+    }
+
+    .hire h2 {
+        font-size: 15px;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+
+    .hire p {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+
+    .hireme a {
+        padding: 3px 5px;
+        background-color: #ffde59;
+        color: #212529;
+        border: 2px solid transparent;
+    }
+
+    .contact h2 {
+        font-size: 22px;
+        margin-bottom: 4px;
+    }
+
+    .contact h2:after {
+        display: block;
+        height: 4px;
+        background-color: #ffde59;
+        content: "";
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .contactme i {
+        margin: 2px;
+        font-size: 15px;
+    }
+
+    .contactme p {
+        margin: 0;
+        font-size: 10px;
+    }
+
+    .social i {
+        font-size: 10px;
+        color: #ffde59;
+    }
+
+    .social p {
+        margin: 0;
+        padding: 0;
+        color: #ffde59;
+        font-size: 10px;
+    }
+
+    .social ul li {
+        margin: 0px 20px;
+    }
+
+}
