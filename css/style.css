@@ -7,7 +7,7 @@
     font-family: 'Nunito', sans-serif;
 }
 
-::selection {
+live sass compiler::selection {
     color: #ffde59;
     background-color: rgba(33, 37, 41, 0.4);
 }
@@ -30,7 +30,7 @@ a:hover {
 }
 
 header {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.9)), url(../image/bg.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.9)), url(../image/bg1.jpg);
     background-position: center;
     background-size: 100% 100%;
     height: 660px;
@@ -38,6 +38,49 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     clip-path: polygon(100% 0%, 100% 80%, 50% 100%, 0% 80%, 0 0);
+}
+
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    margin-top: 8px;
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 20px;
+    background: #6d6d6d;
+    /*    display: block;*/
+    border-radius: 100px;
+    position: relative;
+}
+
+label:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+input:checked + label {
+    background: #151515;
+}
+
+input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 30px;
 }
 
 .lg:hover {
@@ -90,7 +133,7 @@ header {
 
 .header-text i {
     position: relative;
-/*    padding-top: 150px;*/
+    /*    padding-top: 150px;*/
     font-size: 25px;
     color: #ffde59;
     animation: bouncearrow 1.5s infinite;
@@ -136,9 +179,7 @@ section {
     font-size: 35px;
     font-weight: 600;
 }
-s{
-    sdfsdafsf
-}
+
 .about-text p {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -193,7 +234,7 @@ s{
 }
 
 .hire {
-    background-color: #ededed;
+    background-color: #2125293a;
     padding: 0px;
 }
 
@@ -255,11 +296,22 @@ s{
     margin: 0;
     font-size: 18px;
 }
-
+.imageStyle{
+    height: 500px !important;
+}
+.card a:hover{
+    box-shadow: 1px 1px 20px 0px #000;
+    border: hidden;
+}
 footer {
     margin: 0;
     padding: 5px;
     background-color: #212529;
+}
+
+.social h6 {
+    margin-top: 5px;
+    color: #ffde59;
 }
 
 .social ul {
@@ -288,12 +340,13 @@ footer {
     margin: 0;
     padding: 0;
     color: #ffde59;
-    font-size: 18px;
+    font-size: 10px;
 }
 
-.icon{
+.icon {
     margin-right: 25px;
 }
+
 @media(min-width:993px) {}
 
 @media(min-width:769px) and (max-width:992px) {
